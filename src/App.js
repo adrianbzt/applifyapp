@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ShoppingList from './ShoppingList.js' ;
 
 function App() {
   return (
@@ -7,9 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          Hello, Eugen! This is work in progress!
+          Hello, Eugen! Get the daily offer!
       </div>
-        
+      <div>This is work in progress!</div>
+      <ShoppingList name="Eugen" />
       </header>
     </div>
   );
