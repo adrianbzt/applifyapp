@@ -46,7 +46,7 @@ const HomepageHeading = ({ mobile }) => (
   }}>
     <Header
       as='h1'
-      content='Electricitate si gaz'
+      content='Electricitate şi gaz'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -58,7 +58,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Oferte in piata concurentiala'
+      content='Oferte in piata concurenţiala'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -327,8 +327,8 @@ const HomepageLayout = () => (
           <Grid.Column width={3}>
               <Header inverted as='h4' content='' />
               <List link inverted>
-                <List.Item as='a'>Termeni si conditii</List.Item>
-                <List.Item as='a'>Politica de confidentialitate</List.Item>
+                <List.Item as='a'>Termeni şi condiţii</List.Item>
+                <List.Item as='a'>Politica de confidenţialitate</List.Item>
               </List>
             </Grid.Column>
 
