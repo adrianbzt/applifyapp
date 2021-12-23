@@ -18,15 +18,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import {
-    Route,
-    Routes,
-    NavLink,
-    HashRouter
-  } from "react-router-dom";
-  import Acasa from "./Acasa";
-  import InfoUtile from "./InfoUtile"
-  import Contact from "./Contacte";
+import '../index.css';
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
