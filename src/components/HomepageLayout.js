@@ -41,17 +41,19 @@ const { MediaContextProvider, Media } = createMedia({
  * components for such things.
  */
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container position='left ' style={{
+    margin: '15% !important',
+  }}>
     <Header
       as='h1'
       content='Electricitate si gaz'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
+        fontWeight: 'bold',
         marginBottom: 0,
         marginTop: mobile ? '1.5em' : '3em',
-
+        color: 'white',
       }}
     />
     <Header
@@ -64,7 +66,7 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
+    <Button default size='huge' color="green">
       Alege oferta
       <Icon name='right arrow' />
     </Button>
@@ -98,21 +100,19 @@ class DesktopContainer extends Component {
         >
           <Segment
             inverted
-            textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            textAlign='left'
+            style={{ minHeight: 700, padding: '1em 0em', backgroundImage: 'url(../images/background.jpg)', backgroundRepeat: 'repeat', backgroundSize: 'cover', backgroundPosition: 'center'}}
             vertical
+            
           >
             <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
-              pointing={!fixed}
               secondary={!fixed}
               size='large'
             >
-              <Container >
-                <Menu.Item position='right' as='a' active>
-                  Acasa
-                </Menu.Item>
+              <Container position='left' >
+                <Menu.Item as='a' active>Acasa</Menu.Item>
                 <Menu.Item as='a'>Info utile</Menu.Item>
                 <Menu.Item as='a'>Contact</Menu.Item>
                 {/* <HashRouter>
@@ -193,7 +193,7 @@ class MobileContainer extends Component {
               vertical
             >
               <Container>
-                <Menu inverted pointing secondary size='large'>
+                <Menu inverted secondary size='large'>
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' />
                   </Menu.Item>
