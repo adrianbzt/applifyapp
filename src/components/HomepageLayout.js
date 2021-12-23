@@ -58,7 +58,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Oferte in piata concurenţiala'
+      content='Oferte în piaţa concurenţială'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
