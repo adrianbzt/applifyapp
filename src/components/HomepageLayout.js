@@ -235,34 +235,33 @@ const HomepageLayout = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Help Companies and Companions
+            <Header as='h3' style={{ fontSize: '2em', color: 'orange', fontWeight: 'bold' }}>
+            Preţul energiei electrice a atins un nou record pe bursa de profil
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              We can give your company superpowers to do things that they never thought possible.
-              Let us delight your customers and empower your needs... through pure data analytics.
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Make Bananas That Can Dance
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-              bioengineered.
+            Preţul energiei electrice atinge noi recorduri pe bursa de profil OPCOM, 
+            ajungând la peste <b>2.300 de lei pe MWh</b> în vârf de consum pe piaţa spot, după cum arată datele postate pe site-ul operatorului bursier.
+
+            <br/>
+
+            Raportat la luna iunie, când preţul energiei electrice pe piaţa spot a bursei OPCOM (Piaţa pentru Ziua Următoare PZU)
+             a avut o medie de <b>378 lei pe MWh</b>, preţul este uriaş.
+
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image rounded size='large' src='../images/enel.png' />
+            <Image rounded size='large' src='../images/market_stock.jpg' />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
+        {/* <Grid.Row>
           <Grid.Column textAlign='center'>
             <Button size='huge'>Check Them Out</Button>
           </Grid.Column>
-        </Grid.Row>
+        </Grid.Row> */}
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '0em' }} vertical>
+    {/* <Segment style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -282,7 +281,7 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </Segment>
+    </Segment> */}
 
     {/* <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
@@ -325,28 +324,32 @@ const HomepageLayout = () => (
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Despre noi' />
+          <Grid.Column width={3}>
+              <Header inverted as='h4' content='' />
               <List link inverted>
-                <List.Item as='a'>Contacteaza</List.Item>
-                <List.Item as='a'>Drepturile tale</List.Item>
+                <List.Item as='a'>Termeni si conditii</List.Item>
+                <List.Item as='a'>Politica de confidentialitate</List.Item>
               </List>
             </Grid.Column>
+
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='Servicii' />
+              <Header inverted as='h4' content='' />
               <List link inverted>
-                <List.Item as='a'>Contractare</List.Item>
-                <List.Item as='a'>Intrebari frecvente</List.Item>
+                <List.Item as='a'>Intrebari Frecvente</List.Item>
+                <List.Item as='a'>Contact</List.Item>
               </List>
             </Grid.Column>
-            {/* <Grid.Column width={7}>
+
+            <Grid.Column width={3} >
               <Header as='h4' inverted>
-                Footer Header
+                
               </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
-            </Grid.Column> */}
+              
+              <Icon link name='facebook official'style={{ padding: '0em 1em 1em 1em' }}/>
+              <Icon link name='instagram' style={{ padding: '0em 1em 1em 1em' }}/>
+              <Icon link name='phone' style={{ padding: '0em 1em 1em 1em' }}/>
+
+            </Grid.Column>
           </Grid.Row>
         </Grid>
       </Container>
