@@ -1,21 +1,27 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
  
 class Acasa extends Component {
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
- 
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-      </div>
+        <Carousel>
+            <div>
+                <img className="car-image" src="https://expo-media.ro/wp-content/uploads/2021/06/enel1-1200x675.jpg" width={60}/>
+                <p className="legend">enel</p>
+            </div>
+            <div>
+                <img className="car-image" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/ENGIE_logotype_2018.png" />
+                <p className="legend">engie</p>
+            </div>
+            <div>
+                <img className="car-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Electrica_logo.svg/1200px-Electrica_logo.svg.png" />
+                <p className="legend">electrica</p>
+            </div>
+        </Carousel>
     );
-  }
+}
 }
  
 export default Acasa;

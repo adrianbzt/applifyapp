@@ -1,5 +1,5 @@
 body {
-  background-color: #FFCC00;
+  background-color: yellow;
   padding: 20px;
   margin: 0;
 }
@@ -12,7 +12,7 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: #111;
+  background-color: gray;
   padding: 0;
 }
 ul.header li a {
@@ -32,4 +32,13 @@ ul.header li a {
 }
 .content li {
   margin-bottom: 10px;
+}
+
+.car-image {
+  width: 50% !important;
+  height: 80%;
+}
+
+.legend{
+  display: none !important;
 }

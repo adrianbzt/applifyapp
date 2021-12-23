@@ -37,6 +37,6 @@
   }
 }
 
-li > a .active {
+active {
   background-color: #0099FF;
 }
